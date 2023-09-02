@@ -66,8 +66,7 @@
     color: #fff;
     font-size: var(--h3-font-size);
     margin: 0 0 0.98rem;
-    padding:
-        1.25rem;
+    padding: 1.25rem;
     position: absolute;
     top: 3.75rem;
     transform: translateY(30px);
@@ -79,7 +78,7 @@
     color: #fff;
     position: absolute;
     bottom: 1.5rem;
-    left: 1.5rem;
+    right: 1.5rem;
     font-size: var(--h3-font-size);
     display: block;
 
@@ -92,6 +91,10 @@
     line-height: 42px;
     transition: .3s;
     opacity: 0;
+}
+
+.work_card img{
+    aspect-ratio: 270/200;
 }
 
 .work_card:hover .work_button {
