@@ -22,7 +22,7 @@ const Data = [
     id: 3,
     category: "experience",
     icon: "icon-briefcase",
-    year: "2023 - present",
+    year: "Jan 2023 - July 2023 ",
     title: "Graphic Designer",
     desc: "During my internship at Skin Elements, I worked on diverse design projects, creating impactful logos, website wireframes, and various digital assets such as videos, social media posts, infographics, banners, corporate videos, email newsletters, and e-commerce advertisements.",
   },
