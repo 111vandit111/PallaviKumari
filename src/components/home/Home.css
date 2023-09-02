@@ -1,0 +1,157 @@
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro {
+    max-width: 540px;
+    text-align: center;
+}
+
+.home__img {
+    margin-bottom: 1.5em;
+}
+
+I .home___name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5em;
+}
+
+.home__socials {
+    display: flex;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+.home___social-link {
+    color: var(--title-color);
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+
+.home___social-link:hover {
+    color: hsl(43, 100%, 68%);
+    transition: 0.5s;
+}
+
+
+.scroll__down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+    color: var(--text-color);
+    margin: auto;
+    text-align: center;
+}
+
+.home_scroll-name {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.mouse {
+    border: 2px solid var(--text-color);
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem; border-radius: 1rem; position: relative;
+}
+
+@keyframes ani-mouse {
+    0%{
+        top:20%;
+    }
+    
+    50%{
+        top:50%;
+    }
+
+    100%{
+        top:20%;
+    }
+}
+
+.wheel {
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 0.9s linear infinite;
+}
+
+.shapes { 
+    position: absolute; left: 0; top: 0; height: 100%; width: 100%;
+}  
+.shape {
+    position: absolute;
+} 
+
+.s1{
+    left: 60%;
+    top:5%;
+}
+.s2{
+    left: 37%;
+    right:20%;
+    top:82%;
+}
+.s3{
+    left:69%;
+    top:12%;
+}
+.s4{
+    left: 77%;
+    right:85%;
+    top:92%;
+}
+.s5{
+    left: 10%;
+    right:15%;
+    top:30%;
+}
+.s6{
+    left: 50%;
+    right:45%;
+    top :20%
+}
+.s7{
+    left:85%;
+}
+.s8{
+    left: 95%;
+    top:5%;
+}
+.s9{
+    right: 95%;
+    bottom:15%;
+}
+.s10{
+    left: 95%;
+    bottom:15%;
+}
+.s11{
+    top: 10%;
+    left:15%;
+}
+
+@media screen and (max-width: 850px){
+    .home___social-link{
+        font-size: 1.125rem;
+    }
+    .s10{
+        left: 75%;
+        bottom:55%;
+    }
+  }

@@ -1,0 +1,145 @@
+.about_container {
+  grid-template-columns: 3fr 9fr;
+  column-gap: 1.875rem;
+}
+
+.about_data {
+  padding: 1.875rem;
+  background-color: var(--container-color);
+  box-shadow: var(--shadow);
+  border-radius: var(--border-radius);
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.about_data::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid var(--container-color);
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+}
+
+.about_description {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.about_skills {
+  row-gap: 1.25rem;
+}
+
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills_name {
+  font-size: var(--normal-font-size);
+}
+
+.skills_number {
+  line-height: 1.2;
+}
+
+.skills_bar,
+.skills_percentage {
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.skills_bar {
+  background-color: #f1f1f1;
+  margin-top: 5px;
+}
+
+.skills_percentage {
+  display: block;
+}
+
+.development {
+  width: 90%;
+  background-color: rgb(255, 209, 92);
+}
+
+.design {
+  width: 95%;
+  background-color: rgb(180, 57, 187);
+}
+
+.Animation {
+  width: 80%;
+  background-color: rgb(94, 197, 208);
+}
+
+.about_boxes {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+  margin-top: 4.35rem;
+}
+
+.about_box {
+  display: flex;
+  column-gap: 1.5em;
+}
+
+.about_icon {
+  font-size: var(--h1-font-size);
+  color: #dedeea;
+}
+
+@media screen and (max-width: 850px) {
+  .about_container {
+    grid-template-columns: 720px;
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+
+  .about_data::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    left: 49%;
+    top: -20px;
+  }
+
+  .about_img {
+    justify-self: center;
+  }
+  .about_box{
+    flex-direction: column;
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about_container{
+    grid-template-columns: 350px;
+  }
+
+  .about_data::before{
+    left: 47%;
+  }
+
+  .about_data{
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+  }
+  .about_boxes{
+    grid-template-columns: repeat(3,90px);
+    row-gap: 1.5rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 350px){
+  .about_container , .about_boxes{
+      grid-template-columns: 1fr;
+  }
+}
